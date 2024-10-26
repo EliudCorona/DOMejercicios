@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(97, 29, 215);
+            color: rgb(30, 238, 238);
+            text-align: center;
+        }
+        #lienzo { 
+            border: 1px solid rgb(11, 11, 11);
+            background-color: rgb(123, 6, 241);
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: rgb(30, 238, 238);
+            color: rgb(97, 29, 215);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: rgb(20, 160, 160);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Snake Game con Canvas</h1>
+        <p>Puntos: <span id="puntaje">0</span></p>
+        <p>Puntaje Máximo: <span id="puntajeMaximo">0</span></p>
+        <canvas id="lienzo" width="600" height="400"></canvas>
+
+        <a href="../JavaScript.html" class="back-button">Volver a JavaScript</a>
+    </div>  
+
+    <script src="./app.js"></script>  
+</body>
+</html>
